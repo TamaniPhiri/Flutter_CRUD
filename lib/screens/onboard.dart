@@ -1,3 +1,4 @@
+import 'package:crud_dart/screens/auth_screens/register_screen.dart';
 import 'package:crud_dart/screens/intro_screens/intro_one.dart';
 import 'package:crud_dart/screens/intro_screens/intro_three.dart';
 import 'package:crud_dart/screens/intro_screens/intro_two.dart';
@@ -48,9 +49,7 @@ class _OnboardState extends State<Onboard> {
               onLastPage
                   ? InkWell(
                       onTap: () {
-                        _controller.nextPage(
-                            duration: const Duration(milliseconds: 400),
-                            curve: Curves.bounceInOut);
+                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (BuildContext context)=>const RegisterScreen()))
                       },
                       borderRadius: BorderRadius.circular(200),
                       child: Container(
