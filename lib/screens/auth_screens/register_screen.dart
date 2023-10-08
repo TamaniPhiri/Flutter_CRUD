@@ -73,8 +73,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   borderRadius: BorderRadius.circular(20),
                   onTap: () {},
                   child: Container(
-                    decoration: const BoxDecoration(
-                        color: Color.fromARGB(255, 175, 39, 199)),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: const Color.fromARGB(255, 175, 39, 199)),
                     width: MediaQuery.of(context).size.width,
                     padding: const EdgeInsets.all(20),
                     child: const Text(
