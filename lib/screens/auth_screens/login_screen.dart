@@ -14,6 +14,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 175, 39, 199),
+        foregroundColor: Colors.white,
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
