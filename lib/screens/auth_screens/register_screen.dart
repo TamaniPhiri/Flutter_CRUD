@@ -16,24 +16,33 @@ class _RegisterScreenState extends State<RegisterScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SingleChildScrollView(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
             child: Column(
               children: [
                 const Text(
                   "Welcome",
                   style: TextStyle(color: Colors.white, fontSize: 32),
                 ),
-                const TextField(
-                  decoration: InputDecoration(),
-                  style: TextStyle(color: Colors.white),
+                Container(
+                  color: Colors.white,
+                  child: const TextField(
+                    decoration: InputDecoration(border: InputBorder.none),
+                    style: TextStyle(color: Colors.black),
+                  ),
                 ),
-                const TextField(
-                  decoration: InputDecoration(),
-                  style: TextStyle(color: Colors.white),
+                Container(
+                  color: Colors.white,
+                  child: const TextField(
+                    decoration: InputDecoration(border: InputBorder.none),
+                    style: TextStyle(color: Colors.black),
+                  ),
                 ),
-                const TextField(
-                  decoration: InputDecoration(),
-                  style: TextStyle(color: Colors.white),
+                Container(
+                  color: Colors.white,
+                  child: const TextField(
+                    decoration: InputDecoration(border: InputBorder.none),
+                    style: TextStyle(color: Colors.black),
+                  ),
                 ),
                 InkWell(
                   borderRadius: BorderRadius.circular(20),
