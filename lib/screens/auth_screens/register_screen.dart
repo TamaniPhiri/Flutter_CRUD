@@ -124,7 +124,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         child: const Row(
                           children: [
                             Text(
-                              "Already have an account?",
+                              "Already have an account? ",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            Text(
+                              "Login",
                               textAlign: TextAlign.end,
                               style: TextStyle(
                                   color: Color.fromARGB(255, 175, 39, 199)),
