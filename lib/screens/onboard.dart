@@ -3,8 +3,15 @@ import 'package:crud_dart/screens/intro_screens/intro_three.dart';
 import 'package:crud_dart/screens/intro_screens/intro_two.dart';
 import 'package:flutter/material.dart';
 
-class Onboard extends StatelessWidget {
+class Onboard extends StatefulWidget {
   const Onboard({super.key});
+
+  @override
+  State<Onboard> createState() => _OnboardState();
+}
+
+class _OnboardState extends State<Onboard> {
+  PageController _controller = new PageController();
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +36,11 @@ class Onboard extends StatelessWidget {
               ),
               const Text(". . .", style: TextStyle(color: Colors.white)),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  _controller.nextPage(
+                      duration: const Duration(milliseconds: 400),
+                      curve: Curves.bounceInOut);
+                },
                 borderRadius: BorderRadius.circular(200),
                 child: Container(
                     padding: const EdgeInsets.symmetric(
