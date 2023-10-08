@@ -13,12 +13,17 @@ class IntroOne extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
+            height: MediaQuery.of(context).size.height * 0.5,
             color: Colors.blue,
           ),
           const Text(
             "Lorem Ipsum",
             style: TextStyle(
                 color: Colors.white, fontWeight: FontWeight.w600, fontSize: 24),
+          ),
+          const Text(
+            "lorem Ipsum",
+            style: TextStyle(color: Colors.white),
           )
         ],
       ),
