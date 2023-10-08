@@ -89,7 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 const SizedBox(height: 20),
 
-                // Sign up button
+                // Login button
                 Material(
                   shape: ContinuousRectangleBorder(
                       borderRadius: BorderRadius.circular(40)),
@@ -101,7 +101,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       width: MediaQuery.of(context).size.width,
                       padding: const EdgeInsets.all(20),
                       child: const Text(
-                        "Sign up",
+                        "Login",
                         style: TextStyle(color: Colors.white, fontSize: 16),
                         textAlign: TextAlign.center,
                       ),
