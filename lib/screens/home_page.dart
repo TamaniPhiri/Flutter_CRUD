@@ -15,6 +15,10 @@ class _HomePageState extends State<HomePage> {
         leading: const DrawerButton(),
       ),
       drawer: const Drawer(),
+      body: const Text(
+        "Home",
+        style: TextStyle(color: Colors.white),
+      ),
     );
   }
 }
