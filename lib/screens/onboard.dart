@@ -11,7 +11,7 @@ class Onboard extends StatefulWidget {
 }
 
 class _OnboardState extends State<Onboard> {
-  final _controller = PageController();
+  final PageController _controller = PageController();
 
   bool onLastPage = false;
 
