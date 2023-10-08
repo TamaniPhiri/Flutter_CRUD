@@ -13,8 +13,8 @@ class IntroOne extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            "data",
-            style: TextStyle(color: Colors.white),
+            "Lorem Ipsum",
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
           )
         ],
       ),
