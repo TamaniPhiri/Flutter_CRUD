@@ -12,9 +12,8 @@ class IntroOne extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset(
-            "",
-            height: MediaQuery.of(context).size.height * 0.5,
+          Container(
+            color: Colors.blue,
           ),
           const Text(
             "Lorem Ipsum",
