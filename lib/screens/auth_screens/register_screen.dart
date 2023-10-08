@@ -73,6 +73,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     InkWell(
+                      borderRadius: BorderRadius.circular(200),
                       onTap: () {},
                       child: Container(
                         padding: const EdgeInsets.symmetric(
