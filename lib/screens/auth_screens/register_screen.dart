@@ -108,7 +108,28 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       ),
                     ),
                   ),
-                )
+                ),
+                const SizedBox(height: 40),
+                InkWell(
+                  borderRadius: BorderRadius.circular(200),
+                  onTap: () {},
+                  child: Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(20)),
+                    child: Row(
+                      children: [
+                        const Text(
+                          "Forgot password",
+                          textAlign: TextAlign.end,
+                          style: TextStyle(
+                              color: Color.fromARGB(255, 175, 39, 199)),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
