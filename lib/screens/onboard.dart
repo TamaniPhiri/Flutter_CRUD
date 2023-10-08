@@ -29,11 +29,14 @@ class _OnboardState extends State<Onboard> {
             });
           },
         ),
+
+        // Onboard controllers
         Container(
           alignment: const Alignment(0, 0.9),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              // Skip button
               InkWell(
                 onTap: () {
                   _controller.jumpToPage(2);
@@ -45,7 +48,11 @@ class _OnboardState extends State<Onboard> {
                     child: const Text("Skip",
                         style: TextStyle(color: Colors.white))),
               ),
+
+              // dot indicators
               const Text(". . .", style: TextStyle(color: Colors.white)),
+
+              // conditional buttons
               onLastPage
                   ? InkWell(
                       onTap: () {
