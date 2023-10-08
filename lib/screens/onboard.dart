@@ -45,19 +45,33 @@ class _OnboardState extends State<Onboard> {
                         style: TextStyle(color: Colors.white))),
               ),
               const Text(". . .", style: TextStyle(color: Colors.white)),
-              InkWell(
-                onTap: () {
-                  _controller.nextPage(
-                      duration: const Duration(milliseconds: 400),
-                      curve: Curves.bounceInOut);
-                },
-                borderRadius: BorderRadius.circular(200),
-                child: Container(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 20, vertical: 10),
-                    child: const Text("Next",
-                        style: TextStyle(color: Colors.white))),
-              )
+              onLastPage
+                  ? InkWell(
+                      onTap: () {
+                        _controller.nextPage(
+                            duration: const Duration(milliseconds: 400),
+                            curve: Curves.bounceInOut);
+                      },
+                      borderRadius: BorderRadius.circular(200),
+                      child: Container(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 20, vertical: 10),
+                          child: const Text("Done",
+                              style: TextStyle(color: Colors.white))),
+                    )
+                  : InkWell(
+                      onTap: () {
+                        _controller.nextPage(
+                            duration: const Duration(milliseconds: 400),
+                            curve: Curves.bounceInOut);
+                      },
+                      borderRadius: BorderRadius.circular(200),
+                      child: Container(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 20, vertical: 10),
+                          child: const Text("Next",
+                              style: TextStyle(color: Colors.white))),
+                    )
             ],
           ),
         )
