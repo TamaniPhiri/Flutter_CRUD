@@ -48,6 +48,16 @@ class IntroOne extends StatelessWidget {
                         horizontal: 20, vertical: 10),
                     child: const Text("Skip",
                         style: TextStyle(color: Colors.white))),
+              ),
+              const Text("DOTS"),
+              InkWell(
+                onTap: () {},
+                borderRadius: BorderRadius.circular(200),
+                child: Container(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 10),
+                    child: const Text("Next",
+                        style: TextStyle(color: Colors.white))),
               )
             ],
           )
