@@ -23,7 +23,7 @@ class IntroTwo extends StatelessWidget {
             height: 40,
           ),
 
-          // Text
+          // Text column
           const Column(
             children: [
               // Header
