@@ -1,3 +1,4 @@
+import 'package:crud_dart/screens/intro_screens/intro_one.dart';
 import 'package:flutter/material.dart';
 
 class Onboard extends StatelessWidget {
@@ -6,11 +7,12 @@ class Onboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: const BackButton(),
-      ),
       body: PageView(
         children: [
+          const IntroOne(),
+          Container(
+            color: Colors.amber,
+          ),
           Container(
             color: Colors.red,
           )
