@@ -24,8 +24,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   style: TextStyle(color: Colors.white, fontSize: 32),
                 ),
                 Container(
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20)),
                   padding: const EdgeInsets.symmetric(horizontal: 10),
-                  color: Colors.white,
                   child: const TextField(
                     decoration: InputDecoration(
                         border: InputBorder.none, hintText: "Name"),
@@ -33,8 +35,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                 ),
                 Container(
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20)),
                   padding: const EdgeInsets.symmetric(horizontal: 10),
-                  color: Colors.white,
                   child: const TextField(
                     decoration: InputDecoration(
                         border: InputBorder.none, hintText: "Email"),
@@ -42,8 +46,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                 ),
                 Container(
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20)),
                   padding: const EdgeInsets.symmetric(horizontal: 10),
-                  color: Colors.white,
                   child: const TextField(
                     decoration: InputDecoration(
                         border: InputBorder.none, hintText: "Password"),
