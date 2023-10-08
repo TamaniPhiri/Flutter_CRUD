@@ -84,7 +84,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           "Forgot password",
                           textAlign: TextAlign.end,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 175, 39, 199)),
+                              color: Color.fromARGB(255, 212, 71, 237)),
                         ),
                       ),
                     ),
@@ -131,7 +131,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               "Login",
                               textAlign: TextAlign.end,
                               style: TextStyle(
-                                  color: Color.fromARGB(255, 175, 39, 199)),
+                                  color: Color.fromARGB(255, 212, 71, 237)),
                             )
                           ],
                         ),
