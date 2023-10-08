@@ -49,7 +49,7 @@ class IntroOne extends StatelessWidget {
                     child: const Text("Skip",
                         style: TextStyle(color: Colors.white))),
               ),
-              const Text("DOTS"),
+              const Text(". . .", style: TextStyle(color: Colors.white)),
               InkWell(
                 onTap: () {},
                 borderRadius: BorderRadius.circular(200),
