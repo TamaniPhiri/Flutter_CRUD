@@ -118,9 +118,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                     decoration:
                         BoxDecoration(borderRadius: BorderRadius.circular(20)),
-                    child: Row(
+                    child: const Row(
                       children: [
-                        const Text(
+                        Text(
                           "Forgot password",
                           textAlign: TextAlign.end,
                           style: TextStyle(
