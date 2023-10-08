@@ -10,19 +10,30 @@ class RegisterScreen extends StatefulWidget {
 class _RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               "Welcome",
               style: TextStyle(color: Colors.white, fontSize: 32),
             ),
-            TextField(
+            const TextField(
               style: TextStyle(color: Colors.white),
+            ),
+            const TextField(
+              style: TextStyle(color: Colors.white),
+            ),
+            InkWell(
+              child: Container(
+                child: Text(
+                  "Sign up",
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
             )
           ],
         ),
