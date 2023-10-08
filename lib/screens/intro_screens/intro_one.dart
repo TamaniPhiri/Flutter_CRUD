@@ -37,10 +37,11 @@ class IntroOne extends StatelessWidget {
           const SizedBox(
             height: 40,
           ),
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               InkWell(
+                onTap: () {},
                 child: Text("Skip", style: TextStyle(color: Colors.white)),
               )
             ],
