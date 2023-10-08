@@ -77,30 +77,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
                 const SizedBox(height: 20),
 
-                // Forgot Password
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    InkWell(
-                      borderRadius: BorderRadius.circular(200),
-                      onTap: () {},
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 10, vertical: 5),
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20)),
-                        child: const Text(
-                          "Forgot password",
-                          textAlign: TextAlign.end,
-                          style: TextStyle(
-                              color: Color.fromARGB(255, 212, 71, 237)),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 20),
-
                 // Sign up button
                 Material(
                   shape: ContinuousRectangleBorder(
