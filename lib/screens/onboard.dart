@@ -69,7 +69,7 @@ class _OnboardState extends State<Onboard> {
                       child: Container(
                           padding: const EdgeInsets.symmetric(
                               horizontal: 20, vertical: 10),
-                          child: const Text("Next",
+                          child: const Text("t",
                               style: TextStyle(color: Colors.white))),
                     )
             ],
