@@ -12,6 +12,7 @@ class IntroTwo extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          // Image container
           Container(
             height: MediaQuery.of(context).size.height * 0.5,
             decoration: BoxDecoration(
@@ -21,8 +22,11 @@ class IntroTwo extends StatelessWidget {
           const SizedBox(
             height: 40,
           ),
+
+          // Text
           const Column(
             children: [
+              // Header
               Text(
                 "Lorem Ipsum",
                 style: TextStyle(
@@ -34,6 +38,8 @@ class IntroTwo extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
+
+              // Paragraph
               Text(
                 "lorem Ipsum is a dummy text to fill the blank placeholders my gee",
                 style: TextStyle(color: Color.fromARGB(255, 164, 164, 164)),
