@@ -75,8 +75,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     InkWell(
                       onTap: () {},
                       child: Container(
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 10, vertical: 5),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20)),
                         child: const Text(
                           "Forgot password",
                           textAlign: TextAlign.end,
