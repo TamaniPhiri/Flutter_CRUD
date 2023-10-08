@@ -24,7 +24,7 @@ class _OnboardState extends State<Onboard> {
           children: const [IntroOne(), IntroTwo(), IntroThree()],
           onPageChanged: (index) {
             setState(() {
-              onLastPage == (index == 2);
+              onLastPage = (index == 2);
             });
           },
         ),
