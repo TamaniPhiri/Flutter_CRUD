@@ -14,7 +14,7 @@ class Onboard extends StatelessWidget {
           children: const [IntroOne(), IntroTwo(), IntroThree()],
         ),
         Container(
-          alignment: Alignment(0, 0.9),
+          alignment: const Alignment(0, 0.9),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
