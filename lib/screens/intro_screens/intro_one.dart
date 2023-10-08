@@ -22,8 +22,9 @@ class IntroOne extends StatelessWidget {
                 color: Colors.white, fontWeight: FontWeight.w600, fontSize: 24),
           ),
           const Text(
-            "lorem Ipsum",
+            "lorem Ipsum is a dummy text to fill the blank placeholders",
             style: TextStyle(color: Colors.white),
+            textAlign: TextAlign.center,
           )
         ],
       ),
