@@ -26,21 +26,24 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 Container(
                   color: Colors.white,
                   child: const TextField(
-                    decoration: InputDecoration(border: InputBorder.none),
+                    decoration: InputDecoration(
+                        border: InputBorder.none, hintText: "Name"),
                     style: TextStyle(color: Colors.black),
                   ),
                 ),
                 Container(
                   color: Colors.white,
                   child: const TextField(
-                    decoration: InputDecoration(border: InputBorder.none),
+                    decoration: InputDecoration(
+                        border: InputBorder.none, hintText: "Email"),
                     style: TextStyle(color: Colors.black),
                   ),
                 ),
                 Container(
                   color: Colors.white,
                   child: const TextField(
-                    decoration: InputDecoration(border: InputBorder.none),
+                    decoration: InputDecoration(
+                        border: InputBorder.none, hintText: "Password"),
                     style: TextStyle(color: Colors.black),
                   ),
                 ),
@@ -49,7 +52,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   onTap: () {},
                   child: Container(
                     width: MediaQuery.of(context).size.width,
-                    padding: EdgeInsets.all(20),
+                    padding: const EdgeInsets.all(20),
                     child: const Text(
                       "Sign up",
                       style: TextStyle(
