@@ -49,7 +49,11 @@ class _OnboardState extends State<Onboard> {
               onLastPage
                   ? InkWell(
                       onTap: () {
-                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (BuildContext context)=>const RegisterScreen()))
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (BuildContext context) =>
+                                    const RegisterScreen()));
                       },
                       borderRadius: BorderRadius.circular(200),
                       child: Container(
