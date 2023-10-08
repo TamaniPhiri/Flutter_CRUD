@@ -14,7 +14,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
       body: SingleChildScrollView(
         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         child: Column(
-          children: [Text("data")],
+          children: [
+            Text(
+              "data",
+              style: TextStyle(color: Colors.white),
+            )
+          ],
         ),
       ),
     );
