@@ -34,12 +34,14 @@ class IntroOne extends StatelessWidget {
             style: TextStyle(color: Color.fromARGB(255, 164, 164, 164)),
             textAlign: TextAlign.center,
           ),
+          const SizedBox(
+            height: 40,
+          ),
           const Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               InkWell(
-                child: Text("data",
-                    style:
-                        TextStyle(color: Color.fromARGB(255, 164, 164, 164))),
+                child: Text("Skip", style: TextStyle(color: Colors.white)),
               )
             ],
           )
