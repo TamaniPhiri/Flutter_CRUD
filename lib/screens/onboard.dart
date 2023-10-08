@@ -13,29 +13,32 @@ class Onboard extends StatelessWidget {
         PageView(
           children: const [IntroOne(), IntroTwo(), IntroThree()],
         ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            InkWell(
-              onTap: () {},
-              borderRadius: BorderRadius.circular(200),
-              child: Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  child: const Text("Skip",
-                      style: TextStyle(color: Colors.white))),
-            ),
-            const Text(". . .", style: TextStyle(color: Colors.white)),
-            InkWell(
-              onTap: () {},
-              borderRadius: BorderRadius.circular(200),
-              child: Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  child: const Text("Next",
-                      style: TextStyle(color: Colors.white))),
-            )
-          ],
+        Container(
+          alignment: Alignment(0, 0.9),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              InkWell(
+                onTap: () {},
+                borderRadius: BorderRadius.circular(200),
+                child: Container(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 10),
+                    child: const Text("Skip",
+                        style: TextStyle(color: Colors.white))),
+              ),
+              const Text(". . .", style: TextStyle(color: Colors.white)),
+              InkWell(
+                onTap: () {},
+                borderRadius: BorderRadius.circular(200),
+                child: Container(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 10),
+                    child: const Text("Next",
+                        style: TextStyle(color: Colors.white))),
+              )
+            ],
+          ),
         )
       ]),
     );
