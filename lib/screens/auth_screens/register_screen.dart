@@ -14,7 +14,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
@@ -31,6 +31,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               borderRadius: BorderRadius.circular(20),
               onTap: () {},
               child: Container(
+                width: MediaQuery.of(context).size.width,
                 padding: EdgeInsets.all(20),
                 child: const Text(
                   "Sign up",
