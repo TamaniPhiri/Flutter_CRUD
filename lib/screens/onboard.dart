@@ -1,4 +1,5 @@
 import 'package:crud_dart/screens/intro_screens/intro_one.dart';
+import 'package:crud_dart/screens/intro_screens/intro_three.dart';
 import 'package:crud_dart/screens/intro_screens/intro_two.dart';
 import 'package:flutter/material.dart';
 
@@ -9,13 +10,7 @@ class Onboard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: PageView(
-        children: [
-          const IntroOne(),
-          const IntroTwo(),
-          Container(
-            color: Colors.red,
-          )
-        ],
+        children: const [IntroOne(), IntroTwo(), IntroThree()],
       ),
     );
   }
