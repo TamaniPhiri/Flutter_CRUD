@@ -8,11 +8,15 @@ class IntroOne extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20),
       decoration: const BoxDecoration(),
-      child: const Column(
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text(
+          Image.asset(
+            "",
+            height: MediaQuery.of(context).size.height * 0.5,
+          ),
+          const Text(
             "Lorem Ipsum",
             style: TextStyle(
                 color: Colors.white, fontWeight: FontWeight.w600, fontSize: 24),
