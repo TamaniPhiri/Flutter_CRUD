@@ -18,6 +18,9 @@ class IntroOne extends StatelessWidget {
                 color: const Color.fromARGB(255, 175, 39, 199),
                 borderRadius: BorderRadius.circular(20)),
           ),
+          const SizedBox(
+            height: 20,
+          ),
           const Column(
             children: [
               Text(
