@@ -24,6 +24,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   style: TextStyle(color: Colors.white, fontSize: 32),
                 ),
                 Container(
+                  padding: EdgeInsets.symmetric(horizontal: 10),
                   color: Colors.white,
                   child: const TextField(
                     decoration: InputDecoration(
@@ -32,6 +33,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                 ),
                 Container(
+                  padding: EdgeInsets.symmetric(horizontal: 10),
                   color: Colors.white,
                   child: const TextField(
                     decoration: InputDecoration(
@@ -40,6 +42,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                 ),
                 Container(
+                  padding: EdgeInsets.symmetric(horizontal: 10),
                   color: Colors.white,
                   child: const TextField(
                     decoration: InputDecoration(
