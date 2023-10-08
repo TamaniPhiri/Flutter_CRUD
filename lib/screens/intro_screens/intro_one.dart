@@ -14,9 +14,8 @@ class IntroOne extends StatelessWidget {
         children: [
           Container(
             height: MediaQuery.of(context).size.height * 0.5,
-            decoration: const BoxDecoration(
-              color: Colors.blue,
-            ),
+            decoration: BoxDecoration(
+                color: Colors.blue, borderRadius: BorderRadius.circular(20)),
           ),
           const SizedBox(
             height: 40,
@@ -32,7 +31,7 @@ class IntroOne extends StatelessWidget {
           ),
           const Text(
             "lorem Ipsum is a dummy text to fill the blank placeholders",
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Color.fromARGB(255, 164, 164, 164)),
             textAlign: TextAlign.center,
           )
         ],
