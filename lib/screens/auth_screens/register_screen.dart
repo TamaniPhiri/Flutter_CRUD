@@ -32,9 +32,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
               onTap: () {},
               child: Container(
                 padding: EdgeInsets.all(20),
-                child: Text(
+                child: const Text(
                   "Sign up",
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                  textAlign: TextAlign.center,
                 ),
               ),
             )
