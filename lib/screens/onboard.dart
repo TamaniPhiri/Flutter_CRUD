@@ -9,7 +9,13 @@ class Onboard extends StatelessWidget {
       appBar: AppBar(
         leading: const BackButton(),
       ),
-      body: const Text("Onboard"),
+      body: PageView(
+        children: [
+          Container(
+            color: Colors.red,
+          )
+        ],
+      ),
     );
   }
 }
