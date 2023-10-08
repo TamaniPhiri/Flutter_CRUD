@@ -9,9 +9,11 @@ class Onboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: PageView(
-        children: const [IntroOne(), IntroTwo(), IntroThree()],
-      ),
+      body: Stack(children: [
+        PageView(
+          children: const [IntroOne(), IntroTwo(), IntroThree()],
+        ),
+      ]),
     );
   }
 }
