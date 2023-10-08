@@ -16,8 +16,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
         child: Column(
           children: [
             Text(
-              "data",
-              style: TextStyle(color: Colors.white),
+              "Welcome",
+              style: TextStyle(color: Colors.white, fontSize: 32),
             )
           ],
         ),
