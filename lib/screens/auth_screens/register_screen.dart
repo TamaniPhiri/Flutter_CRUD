@@ -25,38 +25,44 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
                 Container(
                   decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: Colors.white12,
                       borderRadius: BorderRadius.circular(15)),
                   padding:
                       const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
                   child: const TextField(
                     decoration: InputDecoration(
-                        border: InputBorder.none, hintText: "Name"),
-                    style: TextStyle(color: Colors.black),
+                        border: InputBorder.none,
+                        hintText: "Name",
+                        hintStyle: TextStyle(color: Colors.white70)),
+                    style: TextStyle(color: Colors.white),
                   ),
                 ),
                 Container(
                   decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: Colors.white12,
                       borderRadius: BorderRadius.circular(15)),
                   padding:
                       const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
                   child: const TextField(
                     decoration: InputDecoration(
-                        border: InputBorder.none, hintText: "Email"),
-                    style: TextStyle(color: Colors.black),
+                        border: InputBorder.none,
+                        hintText: "Email",
+                        hintStyle: TextStyle(color: Colors.white70)),
+                    style: TextStyle(color: Colors.white),
                   ),
                 ),
                 Container(
                   decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: Colors.white12,
                       borderRadius: BorderRadius.circular(15)),
                   padding:
                       const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
                   child: const TextField(
                     decoration: InputDecoration(
-                        border: InputBorder.none, hintText: "Password"),
-                    style: TextStyle(color: Colors.black),
+                        border: InputBorder.none,
+                        hintText: "Password",
+                        hintStyle: TextStyle(color: Colors.white70)),
+                    style: TextStyle(color: Colors.white),
                   ),
                 ),
                 InkWell(
