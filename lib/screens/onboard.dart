@@ -11,13 +11,14 @@ class Onboard extends StatefulWidget {
 }
 
 class _OnboardState extends State<Onboard> {
-  PageController _controller = new PageController();
+  final _controller = PageController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(children: [
         PageView(
+          controller: _controller,
           children: const [IntroOne(), IntroTwo(), IntroThree()],
         ),
         Container(
@@ -26,7 +27,9 @@ class _OnboardState extends State<Onboard> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  _controller.jumpToPage(2);
+                },
                 borderRadius: BorderRadius.circular(200),
                 child: Container(
                     padding: const EdgeInsets.symmetric(
