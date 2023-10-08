@@ -42,8 +42,12 @@ class IntroOne extends StatelessWidget {
             children: [
               InkWell(
                 onTap: () {},
-                child:
-                    const Text("Skip", style: TextStyle(color: Colors.white)),
+                borderRadius: BorderRadius.circular(20),
+                child: Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    child: const Text("Skip",
+                        style: TextStyle(color: Colors.white))),
               )
             ],
           )
