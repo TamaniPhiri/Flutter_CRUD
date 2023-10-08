@@ -23,6 +23,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   "Welcome",
                   style: TextStyle(color: Colors.white, fontSize: 32),
                 ),
+                const SizedBox(height: 20),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.white12,
@@ -37,6 +38,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
+                const SizedBox(height: 20),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.white12,
@@ -51,6 +53,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
+                const SizedBox(height: 20),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.white12,
@@ -65,6 +68,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
+                const SizedBox(height: 20),
                 InkWell(
                   borderRadius: BorderRadius.circular(20),
                   onTap: () {},
