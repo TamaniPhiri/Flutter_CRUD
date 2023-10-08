@@ -34,7 +34,15 @@ class IntroOne extends StatelessWidget {
             style: TextStyle(color: Color.fromARGB(255, 164, 164, 164)),
             textAlign: TextAlign.center,
           ),
-          const Row()
+          const Row(
+            children: [
+              InkWell(
+                child: Text("data",
+                    style:
+                        TextStyle(color: Color.fromARGB(255, 164, 164, 164))),
+              )
+            ],
+          )
         ],
       ),
     );
