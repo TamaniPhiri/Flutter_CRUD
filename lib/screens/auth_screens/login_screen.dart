@@ -105,7 +105,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 const SizedBox(height: 40),
 
-                // Already have an account
+                // Don't have an account
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
