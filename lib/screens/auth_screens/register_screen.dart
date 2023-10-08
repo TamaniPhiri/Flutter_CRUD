@@ -69,6 +69,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                 ),
                 const SizedBox(height: 20),
+                InkWell(
+                  onTap: () {},
+                  child: const Text("Forgot password"),
+                ),
+                const SizedBox(height: 20),
                 Material(
                   shape: ContinuousRectangleBorder(
                       borderRadius: BorderRadius.circular(40)),
