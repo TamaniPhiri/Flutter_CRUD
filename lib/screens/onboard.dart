@@ -22,6 +22,11 @@ class _OnboardState extends State<Onboard> {
         PageView(
           controller: _controller,
           children: const [IntroOne(), IntroTwo(), IntroThree()],
+          onPageChanged: (index) {
+            setState(() {
+              onLastPage == (index == 2);
+            });
+          },
         ),
         Container(
           alignment: const Alignment(0, 0.9),
