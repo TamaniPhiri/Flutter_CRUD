@@ -9,7 +9,7 @@ class IntroOne extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       decoration: const BoxDecoration(),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
@@ -17,35 +17,32 @@ class IntroOne extends StatelessWidget {
             decoration: BoxDecoration(
                 color: Colors.blue, borderRadius: BorderRadius.circular(20)),
           ),
-          const SizedBox(
-            height: 40,
-          ),
-          const Text(
-            "Lorem Ipsum",
-            style: TextStyle(
-                color: Colors.white, fontWeight: FontWeight.w600, fontSize: 24),
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          const Text(
-            "lorem Ipsum is a dummy text to fill the blank placeholders my gee",
-            style: TextStyle(color: Color.fromARGB(255, 164, 164, 164)),
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(
-            height: 40,
+          const Column(
+            children: [
+              Text(
+                "Lorem Ipsum",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 24),
+                textAlign: TextAlign.center,
+              ),
+              Text(
+                "lorem Ipsum is a dummy text to fill the blank placeholders my gee",
+                style: TextStyle(color: Color.fromARGB(255, 164, 164, 164)),
+                textAlign: TextAlign.center,
+              ),
+            ],
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               InkWell(
                 onTap: () {},
-                borderRadius: BorderRadius.circular(20),
+                borderRadius: BorderRadius.circular(200),
                 child: Container(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 10),
                     child: const Text("Skip",
                         style: TextStyle(color: Colors.white))),
               )
