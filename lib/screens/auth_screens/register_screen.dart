@@ -24,12 +24,15 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   style: TextStyle(color: Colors.white, fontSize: 32),
                 ),
                 const TextField(
+                  decoration: InputDecoration(),
                   style: TextStyle(color: Colors.white),
                 ),
                 const TextField(
+                  decoration: InputDecoration(),
                   style: TextStyle(color: Colors.white),
                 ),
                 const TextField(
+                  decoration: InputDecoration(),
                   style: TextStyle(color: Colors.white),
                 ),
                 InkWell(
