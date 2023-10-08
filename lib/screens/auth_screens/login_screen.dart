@@ -1,4 +1,5 @@
 import 'package:crud_dart/screens/auth_screens/register_screen.dart';
+import 'package:crud_dart/screens/home_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -96,7 +97,13 @@ class _LoginScreenState extends State<LoginScreen> {
                   color: const Color.fromARGB(255, 175, 39, 199),
                   child: InkWell(
                     borderRadius: BorderRadius.circular(20),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  const HomePage()));
+                    },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
                       padding: const EdgeInsets.all(20),
