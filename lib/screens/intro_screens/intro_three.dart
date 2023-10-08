@@ -17,6 +17,9 @@ class IntroThree extends StatelessWidget {
             decoration: BoxDecoration(
                 color: Colors.cyan, borderRadius: BorderRadius.circular(20)),
           ),
+          const SizedBox(
+            height: 40,
+          ),
           const Column(
             children: [
               Text(
