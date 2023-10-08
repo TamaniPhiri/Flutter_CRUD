@@ -5,6 +5,11 @@ class Onboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        leading: const BackButton(),
+      ),
+      body: const Text("Onboard"),
+    );
   }
 }
