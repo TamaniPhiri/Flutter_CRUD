@@ -15,7 +15,8 @@ class IntroOne extends StatelessWidget {
           Container(
             height: MediaQuery.of(context).size.height * 0.5,
             decoration: BoxDecoration(
-                color: Colors.blue, borderRadius: BorderRadius.circular(20)),
+                color: const Color.fromARGB(255, 175, 39, 199),
+                borderRadius: BorderRadius.circular(20)),
           ),
           const Column(
             children: [
