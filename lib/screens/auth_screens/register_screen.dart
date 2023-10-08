@@ -20,6 +20,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
             Text(
               "Welcome",
               style: TextStyle(color: Colors.white, fontSize: 32),
+            ),
+            TextField(
+              style: TextStyle(color: Colors.white),
             )
           ],
         ),
