@@ -9,7 +9,7 @@ class IntroTwo extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
       decoration: const BoxDecoration(),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
@@ -17,6 +17,9 @@ class IntroTwo extends StatelessWidget {
             decoration: BoxDecoration(
                 color: const Color.fromARGB(255, 216, 144, 34),
                 borderRadius: BorderRadius.circular(20)),
+          ),
+          SizedBox(
+            height: 10,
           ),
           const Column(
             children: [
