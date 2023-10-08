@@ -15,7 +15,7 @@ class IntroTwo extends StatelessWidget {
           Container(
             height: MediaQuery.of(context).size.height * 0.5,
             decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 175, 39, 199),
+                color: const Color.fromARGB(255, 216, 144, 34),
                 borderRadius: BorderRadius.circular(20)),
           ),
           const Column(
