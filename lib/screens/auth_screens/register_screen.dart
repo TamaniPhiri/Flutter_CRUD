@@ -71,14 +71,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 const SizedBox(height: 20),
                 Material(
                   shape: ContinuousRectangleBorder(
-                      borderRadius: BorderRadius.circular(10)),
+                      borderRadius: BorderRadius.circular(200)),
                   color: const Color.fromARGB(255, 175, 39, 199),
                   child: InkWell(
                     borderRadius: BorderRadius.circular(20),
                     onTap: () {},
                     child: Container(
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15)),
                       width: MediaQuery.of(context).size.width,
                       padding: const EdgeInsets.all(20),
                       child: const Text(
