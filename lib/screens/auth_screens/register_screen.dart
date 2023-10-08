@@ -71,7 +71,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 const SizedBox(height: 20),
                 Material(
                   shape: ContinuousRectangleBorder(
-                      borderRadius: BorderRadius.circular(200)),
+                      borderRadius: BorderRadius.circular(40)),
                   color: const Color.fromARGB(255, 175, 39, 199),
                   child: InkWell(
                     borderRadius: BorderRadius.circular(20),
@@ -81,9 +81,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       padding: const EdgeInsets.all(20),
                       child: const Text(
                         "Sign up",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
+                        style: TextStyle(color: Colors.white, fontSize: 16),
                         textAlign: TextAlign.center,
                       ),
                     ),
