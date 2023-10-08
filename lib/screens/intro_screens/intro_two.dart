@@ -18,8 +18,8 @@ class IntroTwo extends StatelessWidget {
                 color: const Color.fromARGB(255, 216, 144, 34),
                 borderRadius: BorderRadius.circular(20)),
           ),
-          SizedBox(
-            height: 10,
+          const SizedBox(
+            height: 40,
           ),
           const Column(
             children: [
