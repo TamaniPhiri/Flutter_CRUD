@@ -28,6 +28,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               style: TextStyle(color: Colors.white),
             ),
             InkWell(
+              onTap: () {},
               child: Container(
                 child: Text(
                   "Sign up",
