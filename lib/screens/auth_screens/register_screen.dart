@@ -19,11 +19,14 @@ class _RegisterScreenState extends State<RegisterScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
             child: Column(
               children: [
+                // header
                 const Text(
                   "Welcome",
                   style: TextStyle(color: Colors.white, fontSize: 32),
                 ),
                 const SizedBox(height: 20),
+
+                // name input
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.white12,
@@ -39,6 +42,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                 ),
                 const SizedBox(height: 20),
+
+                // email input
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.white12,
@@ -54,6 +59,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                 ),
                 const SizedBox(height: 20),
+
+                // Password
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.white12,
@@ -69,6 +76,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                 ),
                 const SizedBox(height: 20),
+
+                // Forgot Password
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
@@ -91,6 +100,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ],
                 ),
                 const SizedBox(height: 20),
+
+                // Sign up button
                 Material(
                   shape: ContinuousRectangleBorder(
                       borderRadius: BorderRadius.circular(40)),
@@ -110,6 +121,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                 ),
                 const SizedBox(height: 40),
+
+                // Already have an account
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
