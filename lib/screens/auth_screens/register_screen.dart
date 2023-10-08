@@ -16,7 +16,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
         child: Column(
           children: [
             Text(
-              "Welcome",
+              "Hello",
               style: TextStyle(color: Colors.white, fontSize: 32),
             )
           ],
