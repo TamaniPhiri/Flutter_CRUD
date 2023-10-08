@@ -14,7 +14,12 @@ class IntroOne extends StatelessWidget {
         children: [
           Container(
             height: MediaQuery.of(context).size.height * 0.5,
-            color: Colors.blue,
+            decoration: const BoxDecoration(
+              color: Colors.blue,
+            ),
+          ),
+          const SizedBox(
+            height: 40,
           ),
           const Text(
             "Lorem Ipsum",
