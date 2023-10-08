@@ -1,3 +1,4 @@
+import 'package:crud_dart/screens/auth_screens/register_screen.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -111,7 +112,13 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: [
                     InkWell(
                       borderRadius: BorderRadius.circular(200),
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (BuildContext context) =>
+                                    const RegisterScreen()));
+                      },
                       child: Container(
                         padding: const EdgeInsets.symmetric(
                             horizontal: 10, vertical: 5),
