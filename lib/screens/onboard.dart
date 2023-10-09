@@ -41,7 +41,7 @@ class _OnboardState extends State<Onboard> {
               InkWell(
                 onTap: () {
                   _controller.animateToPage(
-                      duration: Duration(milliseconds: 300),
+                      duration: const Duration(milliseconds: 300),
                       curve: Curves.bounceIn,
                       2);
                 },
