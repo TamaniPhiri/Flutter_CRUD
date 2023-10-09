@@ -3,6 +3,7 @@ import 'package:crud_dart/screens/intro_screens/intro_one.dart';
 import 'package:crud_dart/screens/intro_screens/intro_three.dart';
 import 'package:crud_dart/screens/intro_screens/intro_two.dart';
 import 'package:flutter/material.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class Onboard extends StatefulWidget {
   const Onboard({super.key});
@@ -50,7 +51,16 @@ class _OnboardState extends State<Onboard> {
               ),
 
               // dot indicators
-              const Text(". . .", style: TextStyle(color: Colors.white)),
+              SmoothPageIndicator(
+                controller: _controller,
+                count: 3,
+                onDotClicked: (index) {
+                  _controller.animateToPage(
+                      duration: const Duration(milliseconds: 300),
+                      curve: Curves.bounceIn,
+                      index);
+                },
+              ),
 
               // conditional buttons
               onLastPage
