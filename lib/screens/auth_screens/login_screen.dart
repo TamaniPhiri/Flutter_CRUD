@@ -12,6 +12,8 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   bool isAPIcallProcess = false;
   bool hidePassword = true;
+  String? reg;
+  String? password;
   GlobalKey<FormState> globalFormKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
