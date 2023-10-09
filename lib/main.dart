@@ -1,5 +1,7 @@
+import 'package:crud_dart/screens/auth_screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
+import 'screens/auth_screens/register_screen.dart';
 import 'screens/onboard.dart';
 
 void main() {
@@ -21,6 +23,10 @@ class MyApp extends StatelessWidget {
             .copyWith(background: Colors.black12),
       ),
       home: const Onboard(),
+      routes: {
+        "/": (context) => const LoginScreen(),
+        "/register": (context) => const RegisterScreen()
+      },
     );
   }
 }
