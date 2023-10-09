@@ -1,5 +1,6 @@
+import 'package:crud_dart/screens/dummy_page.dart';
 import 'package:crud_dart/screens/home_page.dart';
-import 'package:crud_dart/screens/intro_screens/settings_page.dart';
+import 'package:crud_dart/screens/settings_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,11 @@ class RootPage extends StatefulWidget {
 
 class _RootPageState extends State<RootPage> {
   int _selectedIndex = 0;
-  static const List<Widget> _pages = <Widget>[HomePage(), SettingsPage()];
+  static const List<Widget> _pages = <Widget>[
+    HomePage(),
+    SettingsPage(),
+    Dummy()
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
