@@ -22,6 +22,9 @@ class _HomePageState extends State<HomePage> {
         style: TextStyle(color: Colors.white),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        selectedIconTheme: IconThemeData(color: Colors.white),
         currentIndex: _selectedIndex,
         onTap: (index) {
           setState(() {
