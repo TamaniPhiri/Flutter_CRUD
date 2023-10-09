@@ -40,7 +40,10 @@ class _OnboardState extends State<Onboard> {
               // Skip button
               InkWell(
                 onTap: () {
-                  _controller.jumpToPage(2);
+                  _controller.animateToPage(
+                      duration: Duration(milliseconds: 300),
+                      curve: Curves.bounceIn,
+                      2);
                 },
                 borderRadius: BorderRadius.circular(200),
                 child: Container(
