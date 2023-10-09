@@ -23,6 +23,7 @@ class _RootPageState extends State<RootPage> {
     return Scaffold(
       appBar: AppBar(
         leading: const DrawerButton(),
+        backgroundColor: const Color.fromARGB(255, 175, 39, 199),
       ),
       drawer: const Drawer(),
       body: _pages.elementAt(_selectedIndex),
