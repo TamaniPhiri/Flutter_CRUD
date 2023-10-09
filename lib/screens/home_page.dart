@@ -10,13 +10,15 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        Text(
-          "Home",
-          style: TextStyle(color: Colors.white),
-        )
-      ],
+    return const Scaffold(
+      body: Column(
+        children: [
+          Text(
+            "Home",
+            style: TextStyle(color: Colors.white),
+          )
+        ],
+      ),
     );
   }
 }
