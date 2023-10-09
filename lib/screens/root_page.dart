@@ -24,7 +24,6 @@ class _RootPageState extends State<RootPage> {
       appBar: AppBar(
         leading: const DrawerButton(),
       ),
-      drawer: const Drawer(),
       body: _pages.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         showSelectedLabels: false,
