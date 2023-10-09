@@ -22,6 +22,7 @@ class _HomePageState extends State<HomePage> {
         style: TextStyle(color: Colors.white),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _selectedIndex,
         onTap: (value) {},
         items: const [
           BottomNavigationBarItem(
