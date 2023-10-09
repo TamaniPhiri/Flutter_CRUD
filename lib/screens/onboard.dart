@@ -52,6 +52,8 @@ class _OnboardState extends State<Onboard> {
 
               // dot indicators
               SmoothPageIndicator(
+                effect: const ExpandingDotsEffect(
+                    dotColor: Color.fromARGB(255, 175, 39, 199)),
                 controller: _controller,
                 count: 3,
                 onDotClicked: (index) {
