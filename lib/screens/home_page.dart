@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -18,6 +19,13 @@ class _HomePageState extends State<HomePage> {
       body: const Text(
         "Home",
         style: TextStyle(color: Colors.white),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.add_circled)),
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.add_circled)),
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.add_circled))
+        ],
       ),
     );
   }
