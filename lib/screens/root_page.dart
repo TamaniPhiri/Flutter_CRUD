@@ -22,6 +22,7 @@ class _RootPageState extends State<RootPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        foregroundColor: Colors.white,
         leading: const DrawerButton(),
         backgroundColor: const Color.fromARGB(255, 175, 39, 199),
       ),
