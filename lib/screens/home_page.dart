@@ -9,6 +9,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  int _selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,10 +22,14 @@ class _HomePageState extends State<HomePage> {
         style: TextStyle(color: Colors.white),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        onTap: (value) {},
         items: const [
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.add_circled)),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.add_circled)),
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.add_circled))
+          BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.add_circled), label: ""),
+          BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.add_circled), label: ""),
+          BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.add_circled), label: "")
         ],
       ),
     );
