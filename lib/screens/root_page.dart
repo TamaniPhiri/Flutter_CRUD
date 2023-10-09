@@ -1,15 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class RootPage extends StatefulWidget {
+  const RootPage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<RootPage> createState() => _RootPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _RootPageState extends State<RootPage> {
   int _selectedIndex = 0;
+  static const List<Widget> _pages = <Widget>[];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,10 +18,7 @@ class _HomePageState extends State<HomePage> {
         leading: const DrawerButton(),
       ),
       drawer: const Drawer(),
-      body: const Text(
-        "Home",
-        style: TextStyle(color: Colors.white),
-      ),
+      body: _pages.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         showSelectedLabels: false,
         showUnselectedLabels: false,

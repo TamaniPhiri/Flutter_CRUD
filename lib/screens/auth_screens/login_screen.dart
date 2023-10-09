@@ -1,5 +1,5 @@
 import 'package:crud_dart/screens/auth_screens/register_screen.dart';
-import 'package:crud_dart/screens/home_page.dart';
+import 'package:crud_dart/screens/root_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -109,7 +109,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           context,
                           MaterialPageRoute(
                               builder: (BuildContext context) =>
-                                  const HomePage()));
+                                  const RootPage()));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,
