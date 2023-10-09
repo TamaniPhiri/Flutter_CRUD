@@ -29,12 +29,9 @@ class _HomePageState extends State<HomePage> {
           });
         },
         items: const [
-          BottomNavigationBarItem(
-              icon: Icon(CupertinoIcons.add_circled), label: ""),
-          BottomNavigationBarItem(
-              icon: Icon(CupertinoIcons.add_circled), label: ""),
-          BottomNavigationBarItem(
-              icon: Icon(CupertinoIcons.add_circled), label: "")
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.home), label: ""),
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.gear), label: ""),
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.map), label: "")
         ],
       ),
     );
