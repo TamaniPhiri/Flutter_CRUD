@@ -31,7 +31,7 @@ class _RootPageState extends State<RootPage> {
       // ),
       body: IndexedStack(
         index: _selectedIndex,
-        children: [_pages.elementAt(_selectedIndex)],
+        children: [_pages[_selectedIndex]],
       ),
       bottomNavigationBar: BottomNavigationBar(
         elevation: 0,

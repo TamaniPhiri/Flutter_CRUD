@@ -10,6 +10,6 @@ class Dummy extends StatefulWidget {
 class _DummyState extends State<Dummy> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return const Center();
   }
 }
