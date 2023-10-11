@@ -15,8 +15,8 @@ class _RootPageState extends State<RootPage> {
   int _selectedIndex = 0;
   final List<Widget> _pages = <Widget>[
     const HomePage(),
-    SettingsPage(),
-    Dummy()
+    const SettingsPage(),
+    const Dummy()
   ];
   @override
   Widget build(BuildContext context) {
