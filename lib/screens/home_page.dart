@@ -10,18 +10,16 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 20),
-        child: Column(
-          children: [
-            Text(
-              "Home",
-              style: TextStyle(color: Colors.white),
-            ),
-            TextField()
-          ],
-        ),
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 20),
+      child: Column(
+        children: [
+          Text(
+            "Home",
+            style: TextStyle(color: Colors.white),
+          ),
+          TextField()
+        ],
       ),
     );
   }
