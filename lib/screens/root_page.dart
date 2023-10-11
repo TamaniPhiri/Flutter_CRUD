@@ -28,30 +28,25 @@ class _RootPageState extends State<RootPage> {
       ),
       drawer: const Drawer(),
       body: _pages.elementAt(_selectedIndex),
-      bottomNavigationBar: Container(
-        margin: const EdgeInsets.all(20),
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20), color: Colors.transparent),
-        child: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-          elevation: 0,
-          showSelectedLabels: false,
-          showUnselectedLabels: false,
-          unselectedIconTheme: const IconThemeData(color: Colors.white),
-          selectedIconTheme:
-              const IconThemeData(color: Color.fromARGB(255, 212, 71, 237)),
-          currentIndex: _selectedIndex,
-          onTap: (index) {
-            setState(() {
-              _selectedIndex = index;
-            });
-          },
-          items: const [
-            BottomNavigationBarItem(icon: Icon(CupertinoIcons.home), label: ""),
-            BottomNavigationBarItem(icon: Icon(CupertinoIcons.gear), label: ""),
-            BottomNavigationBarItem(icon: Icon(CupertinoIcons.map), label: "")
-          ],
-        ),
+      bottomNavigationBar: BottomNavigationBar(
+        elevation: 0,
+        type: BottomNavigationBarType.fixed,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        unselectedIconTheme: const IconThemeData(color: Colors.white),
+        selectedIconTheme:
+            const IconThemeData(color: Color.fromARGB(255, 212, 71, 237)),
+        currentIndex: _selectedIndex,
+        onTap: (index) {
+          setState(() {
+            _selectedIndex = index;
+          });
+        },
+        items: const [
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.home), label: ""),
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.gear), label: ""),
+          BottomNavigationBarItem(icon: Icon(CupertinoIcons.map), label: "")
+        ],
       ),
     );
   }
