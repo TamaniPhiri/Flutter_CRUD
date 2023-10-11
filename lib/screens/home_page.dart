@@ -11,13 +11,16 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Column(
-        children: [
-          Text(
-            "Home",
-            style: TextStyle(color: Colors.white),
-          )
-        ],
+      body: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 20.0),
+        child: Column(
+          children: [
+            Text(
+              "Home",
+              style: TextStyle(color: Colors.white),
+            )
+          ],
+        ),
       ),
     );
   }
