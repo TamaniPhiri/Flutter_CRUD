@@ -13,8 +13,8 @@ class RootPage extends StatefulWidget {
 
 class _RootPageState extends State<RootPage> {
   int _selectedIndex = 0;
-  static const List<Widget> _pages = <Widget>[
-    HomePage(),
+  final List<Widget> _pages = <Widget>[
+    const HomePage(),
     SettingsPage(),
     Dummy()
   ];
