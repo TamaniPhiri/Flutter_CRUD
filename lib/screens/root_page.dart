@@ -29,6 +29,7 @@ class _RootPageState extends State<RootPage> {
       drawer: const Drawer(),
       body: _pages.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
+        elevation: 0,
         showSelectedLabels: false,
         showUnselectedLabels: false,
         unselectedIconTheme: const IconThemeData(color: Colors.white),
