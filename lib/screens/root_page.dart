@@ -26,9 +26,9 @@ class _RootPageState extends State<RootPage> {
         leading: const DrawerButton(),
         backgroundColor: const Color.fromARGB(255, 175, 39, 199),
       ),
-      drawer: const Drawer(
-        backgroundColor: Color.fromARGB(255, 175, 39, 199),
-      ),
+      // drawer: const Drawer(
+      //   backgroundColor: Color.fromARGB(255, 175, 39, 199),
+      // ),
       body: IndexedStack(
         index: _selectedIndex,
         children: [_pages.elementAt(_selectedIndex)],
