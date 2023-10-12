@@ -29,10 +29,7 @@ class _RootPageState extends State<RootPage> {
       // drawer: const Drawer(
       //   backgroundColor: Color.fromARGB(255, 175, 39, 199),
       // ),
-      body: IndexedStack(
-        index: _selectedIndex,
-        children: [_pages[_selectedIndex]],
-      ),
+      body: _pages.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         elevation: 0,
         type: BottomNavigationBarType.fixed,
