@@ -18,7 +18,6 @@ class _HomePageState extends State<HomePage> {
             "Home",
             style: TextStyle(color: Colors.white),
           ),
-          TextField()
         ],
       ),
     );
